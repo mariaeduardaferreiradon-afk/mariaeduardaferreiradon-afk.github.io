@@ -1,1 +1,286 @@
-
+/* ========================================
+   ESTILOS DOS ELEMENTOS
+======================================== */
+ 
+h1 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+}
+ 
+h2 {
+    color: #0a2043;
+    font-size: 32px;
+}
+ 
+h3 {
+    color: #0a2043;
+    font-size: 21px;
+}
+ 
+p {
+    color: #333333;
+    line-height: 1.6;
+}
+ 
+a {
+    color: #d4af37;
+    text-decoration: none;
+}
+ 
+ 
+/* ========================================
+   CLASSES
+======================================== */
+ 
+.cargo {
+    color: #b8c7d9;
+    font-weight: bold;
+}
+ 
+.link-social {
+    color: #d4af37;
+    text-decoration: none;
+}
+ 
+.projeto {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+}
+ 
+ 
+/* ========================================
+   ESTILOS GERAIS
+======================================== */
+ 
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+ 
+ 
+/* ========================================
+   CABEÇALHO
+======================================== */
+ 
+header {
+    background-color: #0a2043;
+    padding: 30px;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+}
+ 
+header p {
+    color: #d9e2f0;
+}
+ 
+ 
+/* ========================================
+   NAVEGAÇÃO
+======================================== */
+ 
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+ 
+nav a {
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+ 
+ 
+/* ========================================
+   SEÇÕES
+======================================== */
+ 
+#hero,
+#sobre,
+#habilidades,
+#projetos,
+#interesses,
+#contato {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 1100px;
+    border-radius: 25px;
+}
+ 
+ 
+/* ========================================
+   HERO
+======================================== */
+ 
+#hero {
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+ 
+#hero div {
+    max-width: 600px;
+}
+ 
+#hero h2 {
+    color: #d4af37;
+}
+ 
+#hero img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #d4af37;
+}
+ 
+ 
+/* ========================================
+   HABILIDADES
+======================================== */
+ 
+#habilidades ul,
+#interesses ul {
+    padding-left: 25px;
+}
+ 
+#habilidades li,
+#interesses li {
+    color: #0a2043;
+    margin-bottom: 12px;
+}
+ 
+ 
+/* ========================================
+   PROJETOS
+======================================== */
+ 
+.projetos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 25px;
+}
+ 
+.projeto {
+    border: 1px solid #d9e2f0;
+}
+ 
+.projeto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+ 
+.projeto p {
+    font-size: 15px;
+}
+ 
+.projeto a {
+    display: inline-block;
+    background-color: #0a2043;
+    color: #ffffff;
+    padding: 9px 13px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+ 
+ 
+/* ========================================
+   CONTATO
+======================================== */
+ 
+#contato {
+    max-width: 750px;
+}
+ 
+#contato input {
+    padding: 10px;
+    border: 1px solid #b8c7d9;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+ 
+#contato input[type="submit"] {
+    background-color: #d4af37;
+    color: #ffffff;
+    border: none;
+    width: auto;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+ 
+ 
+/* ========================================
+   RODAPÉ
+======================================== */
+ 
+footer {
+    background-color: #0a2043;
+    padding: 30px;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+}
+ 
+footer p {
+    color: #ffffff;
+}
+ 
+footer a {
+    color: #d4af37;
+}
+ 
+ 
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+ 
+@media (min-width: 768px) {
+ 
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+ 
+    .projetos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+ 
+}
+ 
+ 
+/* ========================================
+   CELULAR
+======================================== */
+ 
+@media (max-width: 767px) {
+ 
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+ 
+    #hero img {
+        width: 230px;
+        height: 230px;
+    }
+ 
+}
+ 
